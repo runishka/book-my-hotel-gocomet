@@ -1,0 +1,79 @@
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    font-family: Inter, sans-serif;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo-highlight {
+    color:#0a66bb;
+    font-weight: 400;
+}
+
+.logo-highlight.bold {
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-size: 16px;
+    color: rgb(91, 89, 89);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-links a:focus {
+    outline: 2px solid #0a66bb;
+    border-radius: 4px;
+}
+
+.sign-in {
+    font-size: 16px;
+    background: none;
+    color: rgb(91, 89, 89);
+    /* font-weight: bold; */
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.sign-in:hover {
+    opacity: 0.8;
+    color: #0a66bb;
+}
+
+.sign-in:focus {
+    outline: 2px solid #0a66bb;
+    border-radius: 4px;
+}

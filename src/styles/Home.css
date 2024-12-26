@@ -1,0 +1,47 @@
+
+/* Retained the previous styles */
+.search-sort {
+    display: none; /* Hiding old search bar since it's replaced with the new design */
+}
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #0a66bb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+button:disabled {
+    background: #ccc;
+}
+
+button:hover:not(:disabled) {
+    background: #085399;
+}
+
+
+.background{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+}

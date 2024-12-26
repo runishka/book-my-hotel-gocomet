@@ -1,0 +1,112 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Styling links globally */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease; /* Smooth hover effect for links */
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Button styles globally */
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Click effect */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Prevent overflows for images and videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Prevent div wiggling on mouse hover */
+div {
+    transition: all 0.2s ease-in-out; /* Smooth transition for scaling or hover changes */
+}
+
+/* Prevent borders from appearing zoomed out */
+div:hover {
+    transform: none; /* No unintentional zooming or wiggling */
+}
+
+/* Add a default box-shadow for cards */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar adjustments */
+.navbar {
+    padding: 1rem 2rem;
+    position: sticky; /* Keep navbar fixed at the top */
+    top: 0;
+    z-index: 1000;
+}
+
+/* General flex utility class */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Global spacing adjustments */
+.spacing-sm {
+    margin: 0.5rem 0;
+}
+
+.spacing-md {
+    margin: 1rem 0;
+}
+
+.spacing-lg {
+    margin: 2rem 0;
+}
